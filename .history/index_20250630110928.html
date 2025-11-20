@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALPHA Dance Academy</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/d2a04fa078.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-gray-900" id="slide">
+
+    <!-- Header & Navigation -->
+    
+        <nav class="z-10 max-w-full mx-auto flex items-center justify-between py-6 px-4 lg:px-10" id="myHeader">
+            <!-- Left Nav -->
+            <div class="hidden lg:flex gap-x-6 items-center justify-end">
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-2 focus:outline-none">
+                        About
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-[300px] bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="about.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">About ALPHA Dance Academy</a>
+                        <a href="coaches.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Our Coaches</a>
+                        <a href="pay_plan.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Payment Plans</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-1 focus:outline-none">
+                        Our Classes
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="fitness.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Fitness Class</a>
+                        <a href="kids.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Kids Dance Class</a>
+                        <a href="adults.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Adults Dance Class</a>
+                        <a href="gen.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">General Dance Class</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-1 focus:outline-none">
+                        Forums
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="coach_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">ALPHAs' Forum</a>
+                        <a href="parents_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Parents Forum</a>
+                        <a href="motm_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Members of the Month</a>
+                    </div>
+                </div>
+                <a href="faq.html" class="text-sm font-bold hover:text-indigo-400 text-white">FAQs</a>
+                <a href="feedback.html" class="uppercase text-sm font-bold hover:text-indigo-400 text-white">Contact Us</a>
+            </div>
+            <!-- Center Logo -->
+            <div class="flex-1 flex justify-center">
+                <a href="index.html" class="flex items-center">
+                    <img class="h-10 w-auto" src="img/logo2.png" alt="Alpha Dance Academy Logo">
+                </a>
+            </div>
+            <!-- Right Nav -->
+            <div class="hidden lg:flex flex-1 justify-start gap-x-6 items-center uppercase">
+                <a href="dashboard.html" id="profile" class="text-sm font-bold text-white hover:text-indigo-400"><i class="fa fa-user-circle"></i> Your Profile</a>
+                <a href="signup.html" class="text-sm font-bold hover:text-indigo-400 text-white">Register <span aria-hidden="true">&rarr;</span></a>
+                <a href="login.html" class="text-sm font-bold hover:text-indigo-400 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white absolute right-4 top-1/2 -translate-y-1/2">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-black text-white px-6 py-4">
+            <ul class="flex flex-col gap-4">
+                <li><a href="about.html">About</a></li>
+                <li><a href="coaches.html">Our Coaches</a></li>
+                <li><a href="pay_plan.html">Payment Plans</a></li>
+                <li><a href="fitness.html">Fitness Class</a></li>
+                <li><a href="kids.html">Kids Dance Class</a></li>
+                <li><a href="adults.html">Adults Dance Class</a></li>
+                <li><a href="gen.html">General Dance Class</a></li>
+                <li><a href="coach_f.html">ALPHAs' Forum</a></li>
+                <li><a href="parents_f.html">Parents Forum</a></li>
+                <li><a href="motm_f.html">Members of the Month</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="feedback.html">Contact Us</a></li>
+                <li><a href="signup.html">Register</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-transparent text-center py-32">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block px-4 py-1 text-sm rounded-full bg-white/10 text-white ring-2 ring-indigo-400 mb-6">Announcing our next batch of classes. <a href="class" class="text-indigo-400 font-semibold">Read more &rarr;</a></span>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">ALPHA DANCE ACADEMY</h1>
+            <p class="text-2xl md:text-3xl text-indigo-100 mb-8">100% PASSION OR NOTHING</p>
+            <div class="flex justify-center gap-6">
+                <a href="#" class="bg-gradient-to-r from-indigo-600 to-green-500 hover:from-green-500 hover:to-indigo-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition">Get started</a>
+                <a href="#" class="border border-white text-white hover:bg-white hover:text-indigo-700 font-semibold px-8 py-3 rounded-lg transition">Learn more &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaches Section -->
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto grid xl:grid-cols-3 gap-12 px-4">
+            <div>
+                <h2 class="text-3xl font-bold mb-6 text-indigo-700">Meet our coaches</h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    Our passionate team of coaches brings years of experience in dance and fitness, inspiring every member to reach their full potential. Meet the dedicated professionals who make ALPHA Dance Academy a vibrant, supportive, and motivating community.
+                </p>
+                <a href="coaches.html" class="bg-gradient-to-r from-indigo-600 to-green-500 hover:from-green-500 hover:to-indigo-600 text-white font-bold px-6 py-3 rounded-lg shadow transition">Read More</a>
+            </div>
+            <ul class="xl:col-span-2 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <li class="flex items-center gap-4">
+                    <img src="img/001-profile.jpg" alt="Chekwas Michaels Okorie" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Chekwas Michaels Okorie</h3>
+                        <p class="text-indigo-600 font-bold">Founder / CEO</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img src="img/013-profile.jpg" alt="Chinweze Chimamanda Mmesoma" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Chinweze Chimamanda Mmesoma</h3>
+                        <p class="text-indigo-600 font-bold">Man_daa</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img src="img/003-profile.jpg" alt="Obinna Joseph Sylvester" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Obinna Joseph Sylvester</h3>
+                        <p class="text-indigo-600 font-bold">HyperActive50</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img src="img/004-profile.jpg" alt="Ezeja Samson Chigozie" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Ezeja Samson Chigozie</h3>
+                        <p class="text-indigo-600 font-bold">Sam1</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img src="img/005-profile.jpg" alt="Ignatius Wisdom" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Ignatius Wisdom</h3>
+                        <p class="text-indigo-600 font-bold">Wizikesh</p>
+                    </div>
+                </li>
+                <li class="flex items-center gap-4">
+                    <img src="img/009-profile.jpg" alt="Michael Ndudi" class="w-16 h-16 rounded-full shadow">
+                    <div>
+                        <h3 class="font-semibold">Michael Ndudi</h3>
+                        <p class="text-indigo-600 font-bold">E_Sky</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="relative bg-gradient-to-br from-indigo-900 via-black to-indigo-950 py-24 text-white text-center">
+        <div class="max-w-2xl mx-auto">
+            <img src="img/logo.png" alt="Alpha Dance Academy Logo" class="mx-auto h-32 mb-8 rounded-full shadow-lg">
+            <div id="testimonial-carousel" class="relative">
+                <!-- Slides -->
+                <div class="carousel-slide block">
+                    <blockquote class="text-2xl font-semibold mb-8">“Alpha Dance Academy has made me fall in love with dance and the blending of dance with fitness has helped with my health and lifestyle.”</blockquote>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="img/rita.jpg" alt="Rita Uchechukwu Eze Agbakwuru" class="w-20 h-20 rounded-full mx-auto shadow">
+                        <span class="font-semibold">Rita Uchechukwu Eze Agbakwuru</span>
+                        <span class="text-indigo-400">ALPHA Member of the Month</span>
+                    </div>
+                </div>
+                <div class="carousel-slide hidden">
+                    <blockquote class="text-2xl font-semibold mb-8">“The coaches are amazing and the classes are always fun and challenging. I’ve grown so much as a dancer!”</blockquote>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="img/testimonial2.jpg" alt="Chinedu Okafor" class="w-20 h-20 rounded-full mx-auto shadow">
+                        <span class="font-semibold">Chinedu Okafor</span>
+                        <span class="text-indigo-400">ALPHA Student</span>
+                    </div>
+                </div>
+                <div class="carousel-slide hidden">
+                    <blockquote class="text-2xl font-semibold mb-8">“Joining ALPHA was the best decision for my fitness and social life. Highly recommended!”</blockquote>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="img/testimonial3.jpg" alt="Ngozi Nwosu" class="w-20 h-20 rounded-full mx-auto shadow">
+                        <span class="font-semibold">Ngozi Nwosu</span>
+                        <span class="text-indigo-400">Parent</span>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <div class="flex justify-center gap-4 mt-8">
+                    <button id="carousel-prev" class="bg-white/10 hover:bg-indigo-400 text-white rounded-full w-10 h-10 flex items-center justify-center transition" aria-label="Previous testimonial">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <button id="carousel-next" class="bg-white/10 hover:bg-indigo-400 text-white rounded-full w-10 h-10 flex items-center justify-center transition" aria-label="Next testimonial">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Simple Carousel Logic
+            (function() {
+                const slides = document.querySelectorAll('#testimonial-carousel .carousel-slide');
+                let current = 0;
+                function showSlide(idx) {
+                    slides.forEach((slide, i) => {
+                        slide.classList.toggle('hidden', i !== idx);
+                        slide.classList.toggle('block', i === idx);
+                    });
+                }
+                document.getElementById('carousel-prev').onclick = function() {
+                    current = (current - 1 + slides.length) % slides.length;
+                    showSlide(current);
+                };
+                document.getElementById('carousel-next').onclick = function() {
+                    current = (current + 1) % slides.length;
+                    showSlide(current);
+                };
+                setInterval(() => {
+                    current = (current + 1) % slides.length;
+                    showSlide(current);
+                }, 7000);
+                showSlide(current);
+            })();
+        </script>
+    </section>
+
+    <!-- Products Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-indigo-700">Our Brand Tops</h2>
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow group">
+                    <img src="img/product-page-01-related-product-01.jpg" alt="Sleevless Beast Edition" class="w-full h-64 object-cover group-hover:opacity-80 transition">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-semibold">Sleevless Beast Edition</h3>
+                            <p class="text-gray-500 text-sm">Black</p>
+                        </div>
+                        <span class="font-bold text-gray-900">$35</span>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow group">
+                    <img src="img/product-page-01-related-product-02.jpg" alt="Female Crop Top" class="w-full h-64 object-cover group-hover:opacity-80 transition">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-semibold">Female Crop Top</h3>
+                            <p class="text-gray-500 text-sm">Black</p>
+                        </div>
+                        <span class="font-bold text-gray-900">$35</span>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow group">
+                    <img src="img/product-page-01-related-product-03.jpg" alt="Sleeved Zipper Alpha Top" class="w-full h-64 object-cover group-hover:opacity-80 transition">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-semibold">Sleeved Zipper Alpha Top</h3>
+                            <p class="text-gray-500 text-sm">Blue</p>
+                        </div>
+                        <span class="font-bold text-gray-900">$35</span>
+                    </div>
+                </div>
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow group">
+                    <img src="img/product-page-01-related-product-04.jpg" alt="Sleeved Alpha Top" class="w-full h-64 object-cover group-hover:opacity-80 transition">
+                    <div class="p-4 flex justify-between items-center">
+                        <div>
+                            <h3 class="font-semibold">Sleeved Alpha Top</h3>
+                            <p class="text-gray-500 text-sm">White</p>
+                        </div>
+                        <span class="font-bold text-gray-900">$35</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <a href="shop.html" class="bg-gradient-to-r from-indigo-600 to-green-500 hover:from-green-500 hover:to-indigo-600 text-white font-bold px-12 py-3 rounded-lg shadow transition">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-[#1a1a2e] to-[#16213e] text-white py-12">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 px-4">
+            <div class="flex items-center gap-4">
+                <img src="img/logo.png" alt="Alpha Dance Academy Logo" class="h-20 w-20 rounded-full shadow">
+                <div>
+                    <p class="font-semibold text-lg">Alpha Dance Academy</p>
+                    <p class="text-sm text-indigo-200">100% Passion or Nothing.</p>
+                </div>
+            </div>
+            <form class="flex justify-center w-full md:w-auto">
+                <div class="min-w-0 w-60 lg:w-80 shrink">
+                    <input type="email" aria-label="Email address" placeholder="Email address" autocomplete="email" required class="block w-full appearance-none rounded-lg border border-gray-200 bg-transparent py-2 px-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                </div>
+                <button class="relative inline-flex justify-center flex-none px-3 py-2 ml-4 overflow-hidden text-sm font-semibold text-white transition-colors rounded-lg outline-2 outline-offset-2 bg-gradient-to-r from-indigo-600 to-green-500 hover:from-green-500 hover:to-indigo-600 before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-indigo-700 active:text-white/80 before:transition-colors"
+                    type="submit">
+                        <span class="hidden lg:inline">Join our newsletter</span>
+                        <span class="lg:hidden">Join newsletter</span>
+                </button>
+            </form>
+            <div class="flex gap-4">
+                <a href="https://facebook.com"><img src="img/icons8-facebook.svg" alt="Facebook" class="h-8"></a>
+                <a href="https://youtube.com"><img src="img/icons8-youtube.svg" alt="YouTube" class="h-8"></a>
+                <a href="https://twitter.com"><img src="img/icons8-twitter.svg" alt="Twitter" class="h-8"></a>
+                <a href="https://tiktok.com"><img src="img/icons8-tiktok.svg" alt="TikTok" class="h-8"></a>
+                <a href="https://instagram.com"><img src="img/icons8-instagram.svg" alt="Instagram" class="h-8"></a>
+            </div>
+        </div>
+        <div class="text-center text-indigo-200 mt-8 text-sm">&copy; 2025. All rights reserved.</div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').onclick = function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        };
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

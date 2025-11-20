@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" type="img/ico" href=" img/favicon.ico">
+    <script src="https://kit.fontawesome.com/d2a04fa078.js" crossorigin="anonymous"></script>
+    <title>ALPHA Dance Academy</title>
+</head>
+
+<body>
+    <div class="bg-vampireBlack" id="slider">
+        <header>
+            <nav class="flex items-center justify-between max-w-full p-6 mx-4 lg:px-10" aria-label="Global">
+                <div class="hidden lg:flex lg:gap-x-4">
+                    <div class="relative">
+                        <button type="button" id="dropbtn" onclick="myDropdown()" class="flex items-center text-sm font-bold leading-6 uppercase gap-x-1 text-ghostwhite hover:text-gold" aria-expanded="false">
+                        About
+                            <svg class="flex-none w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="myDropdown" class="absolute z-10 hidden w-screen max-w-sm mt-3 overflow-hidden bg-white rounded-lg shadow-lg -left-4 top-full ring-1 ring-gray-900/5">
+                            <div class="p-4" id="dropdown-content">
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="about.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            About ALPHA Dance Academy
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="coaches.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Our Coaches
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="pay_plan.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Payment Plans
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <button type="button" id="dropbtn" onclick="myDropdown2()" class="flex items-center text-sm font-bold leading-6 uppercase gap-x-1 text-ghostwhite hover:text-gold" aria-expanded="false">
+                        Our Classes
+                            <svg class="flex-none w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="myDropdown2" class="absolute z-10 hidden w-screen max-w-sm mt-3 overflow-hidden bg-white rounded-lg shadow-lg -left-4 top-full ring-1 ring-gray-900/5">
+                            <div class="p-4" id="dropdown-content">
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="fitness.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Fitness Class
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="kids.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Kids Dance Class
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="adults.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Adults Dance Class
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="gen.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            General Dance Class
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <button type="button" id="dropbtn" onclick="myDropdown3()" class="flex items-center text-sm font-bold leading-6 uppercase gap-x-1 text-ghostwhite hover:text-gold" aria-expanded="false">
+                            Forums
+                            <svg class="flex-none w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="myDropdown3" class="absolute z-10 hidden w-screen max-w-sm mt-3 overflow-hidden bg-white rounded-lg shadow-lg -left-4 top-full ring-1 ring-gray-900/5">
+                            <div class="p-4" id="dropdown-content">
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="coach_f.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            ALPHAs' Forum
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="parents_f.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Parents Forum
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="relative flex items-center p-4 text-sm leading-6 rounded-lg group gap-x-6 hover:bg-gray-50">
+
+                                    <div class="flex-auto">
+                                        <a href="motm_f.html" class="block font-bold text-gray-900 normal-case hover:text-steelGray">
+                                            Members of the Month
+                                            <span class="absolute inset-0"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="faq.html" class="text-sm font-bold leading-6 hover:text-gold text-ghostwhite font-arial">FAQs</a>
+                    <a href="feedback.html" class="text-sm font-bold leading-6 hover:text-gold text-ghostwhite font-arial">Contact Us</a>
+                </div>
+                <div class="flex lg:flex-1">
+                    <a href="index.html" class="-mt-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="lg:mx-16 h-8 w-auto mx-[350px]" src="img/logo2.png" alt="">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" id="mm-btn" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="hidden -mr-4 space-x-6 lg:flex lg:flex-1 lg:justify-end">
+                    <a href="dashboard.html" id="profile" class="hidden text-sm font-bold leading-6 text-white md:bg-none hover:cursor-pointer focus:none md:block hover:text-gold"><i class="fa fa-user-circle"></i> Your Profile</a>
+                    <a href="signup.html" class="text-sm font-bold leading-6 hover:text-gold hover:cursor-pointer text-ghostwhite">Register <span aria-hidden="true">&rarr;</span></a>
+                    <a href="login.html" class="text-sm font-bold leading-6 hover:text-gold hover:cursor-pointer text-ghostwhite">Log in <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="text-white lg:hidden" role="dialog" aria-modal="true">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+
+                <div id="m-menu" class="inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-black sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="index.html" class="mx-40 p-1.5">
+                            <span class="sr-only">Your Company</span>
+                            <img class="w-8 h-8" src="img/logo.png" alt="">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                          <span class="sr-only">Close menu</span>
+                          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                    </div>
+                    <div class="flow-root mt-6">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="py-6 space-y-2">
+                                <div class="-mx-3">
+                                    <button type="button" id="dropdown-btn" onclick="myMobileDropdown()" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                                      About
+                                      <!--
+                                        Expand/collapse icon, toggle classes based on menu open state.
+                      
+                                        Open:"rotate-180", Closed:""
+                                      -->
+                                      <svg class="flex-none w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                      </svg>
+                                    </button>
+                                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                                    <div class="hidden mt-2 space-y-2" id="dropdown-content">
+                                        <a href="about.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">About ALPHA Dance Academy</a>
+                                        <a href="coaches.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Our Coaches</a>
+                                        <a href="pay_plan.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Payment Plans</a>
+
+                                    </div>
+                                </div>
+                                <div class="-mx-3">
+                                    <button type="button" id="dropdown-btn" onclick="myMobileDropdown2()" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1">
+                                      Our Classes
+                                      <!--
+                                        Expand/collapse icon, toggle classes based on menu open state.
+                      
+                                        Open:"rotate-180", Closed:""
+                                      -->
+                                      <svg class="flex-none w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                      </svg>
+                                    </button>
+                                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                                    <div class="hidden mt-2 space-y-2" id="dropdown-content">
+                                        <a href="about.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">About ALPHA Dance Academy</a>
+                                        <a href="about.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">About ALPHA Dance Academy</a>
+                                        <a href="coaches.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Our Coaches</a>
+                                        <a href="pay_plan.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Payment Plans</a>
+
+                                    </div>
+                                </div>
+                                <div class="-mx-3">
+                                    <button type="button" id="dropdown-btn" onclick="myMobileDropdown3()" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                                      Forums
+                                      <!--
+                                        Expand/collapse icon, toggle classes based on menu open state.
+                      
+                                        Open:"rotate-180", Closed:""
+                                      -->
+                                      <svg class="flex-none w-5 h-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                      </svg>
+                                    </button>
+                                    <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                                    <div class="hidden mt-2 space-y-2" id="dropdown-content">
+                                        <a href="about.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">About ALPHA Dance Academy</a>
+                                        <a href="coaches.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Our Coaches</a>
+                                        <a href="pay_plan.html" class="block py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Payment Plans</a>
+
+                                    </div>
+                                </div>
+                                <a href="#" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Features</a>
+                                <a href="#" class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50">Marketplace</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="login.html" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="relative py-20 overflow-hidden isolate sm:py-32">
+            <div class="px-6 mx-auto max-w-7xl lg:px-20">
+                <div class="max-w-2xl mx-auto lg:mx-0 lg:max-w-5xl">
+                    <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Alpha Dance Academy</h2>
+                    <p class="mt-6 text-lg leading-8 text-ghostwhite">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam at quaerat rem reiciendis,
+                        minima temporibus fugiat perspiciatis, dolorum quod enim omnis consectetur ea eveniet rerum earum amet quia exercitationem! Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quod vitae ab alias quis accusamus.
+                        Iure porro totam ea, impedit nobis pariatur fugit ipsam aliquam eligendi! Similique autem culpa sapiente.</p>
+                </div>
+                <div class="max-w-2xl mx-auto mt-10 lg:mx-0 lg:max-w-none">
+                    <!-- <div class="grid grid-cols-1 text-base font-semibold leading-7 text-white gap-x-8 gap-y-6 sm:grid-cols-2 md:flex lg:gap-x-10">
+                        <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
+                        <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a>
+                    </div> -->
+                    <dl class="grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-ghostwhite">Offices worldwide</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">12</dd>
+                        </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-ghostwhite">Full-time colleagues</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">300+</dd>
+                        </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-ghostwhite">Hours per week</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">40</dd>
+                        </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-base leading-7 text-ghostwhite">Paid time off</dt>
+                            <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Unlimited</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="py-24 overflow-hidden bg-white sm:py-32">
+        <div class="px-6 mx-auto max-w-7xl lg:px-8">
+            <div class="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+                        <h2 class="text-base font-semibold leading-7 text-indigo-600">Our Motto: 100% Passion or Nothing</h2>
+                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">ALPHA Qualities</p>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">
+                            At Alpha Dance Academy, we believe in more than just dance steps. Our core values shape every member into a true ALPHA: Passion, Consistency, Respect, and Loyalty. These qualities drive our community and inspire excellence in every performance and interaction.
+                        </p>
+                        <dl class="max-w-xl mt-10 space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <!-- Passion: Heart Icon -->
+                                    <svg class="absolute w-5 h-5 text-red-500 left-1 top-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+                                    </svg>
+                                    Passion
+                                </dt>
+                                <dd class="inline">We dance with our hearts, bringing energy and emotion to every movement. Passion fuels our creativity and commitment to growth.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <!-- Consistency: Repeat/Sync Icon -->
+                                    <svg class="absolute w-5 h-5 text-blue-500 left-1 top-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M4 4a8 8 0 018-2v2a6 6 0 100 12v2a8 8 0 01-8-8zM16 16a8 8 0 01-8 2v-2a6 6 0 100-12V2a8 8 0 018 8z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Consistency
+                                </dt>
+                                <dd class="inline">We show up, practice, and improve every day. Consistency builds skill, confidence, and lasting results.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <!-- Respect: Handshake Icon -->
+                                    <svg class="absolute w-5 h-5 text-green-600 left-1 top-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M7 10V8a3 3 0 016 0v2h1a2 2 0 012 2v2a2 2 0 01-2 2h-1v1a2 2 0 01-2 2h-2a2 2 0 01-2-2v-1H5a2 2 0 01-2-2v-2a2 2 0 012-2h2z"/>
+                                    </svg>
+                                    Respect
+                                </dt>
+                                <dd class="inline">We honor each other’s differences and support one another. Respect creates a positive, inclusive environment for all.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <!-- Loyalty: Star Icon -->
+                                    <svg class="absolute w-5 h-5 text-yellow-500 left-1 top-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.176 0l-3.38 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.05 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"/>
+                                    </svg>
+                                    Loyalty
+                                </dt>
+                                <dd class="inline">We stand by our academy and each other, building trust and a sense of belonging that lasts beyond the dance floor.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <img id="product" alt="Alpha Dance Academy students dancing" src="img/product.jpg" class="w-[48rem] max-w-none rounded-lg shadow-xl sm:w-[57rem] md:ml-0 lg:-ml-0" width="2452" height="1402">
+            </div>
+        </div>
+    </div>
+
+    <footer class="hidden text-white border-t border-gray-200 bg-blackRock lg:flex">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-start justify-between pt-16 pb-6 gap-y-12 lg:flex-row lg:items-center lg:py-4">
+                <div class="flex-col-reverse md:flex-col">
+                    <div class="flex items-center text-gray-900">
+                        <div>
+                            <img src="img/logo.png" alt="" class="w-40 h-40 mt-1 md:block">
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-base font-semibold">Alpha Dance Academy</p>
+                            <p class="mt-1 text-sm">100% Passion or Nothing.</p>
+                        </div>
+                        <div class="flex flex-col-reverse lg:flex-row lg:max-w-[500px] md:ml-[300px] items-center md:items-start">
+                            <form class="flex justify-center w-full md:w-auto">
+                                <div class="min-w-0 w-60 lg:w-80 shrink">
+                                    <input id=":S5:" type="email" aria-label="Email address" placeholder="Email address" autocomplete="email" required="" class="block w-full appearance-none rounded-lg border border-gray-200 bg-white py-[calc(theme(spacing.2)-1px)]
+                      px-[calc(theme(spacing.3)-1px)] text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                                </div>
+                                <button class="relative inline-flex justify-center flex-none px-3 py-2 ml-4 overflow-hidden text-sm font-semibold text-white transition-colors rounded-lg outline-2 outline-offset-2 bg-blueViolet before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-rebeccaPurple active:text-white/80 before:transition-colors"
+                                    type="submit">
+                                      <span class="hidden lg:inline">Join our newsletter</span>
+                                      <span class="lg:hidden">Join newsletter</span>
+                                  </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center max-w-full pt-8 pb-4 border-t border-gray-200 md:flex-row-reverse md:justify-between md:pt-6">
+
+                        <p class="mt-6 text-sm text-gray-500 md:mt-0 ml-[600px]" style="float: right;">© Copyright
+                            <!-- -->2023
+                            <!-- -->. All rights reserved.
+                        </p>
+                        <div class="flex max-w-[500px] px-4 py-2 space-x-10" style="float: left;">
+                            <!-- Link 1 -->
+                            <a href="www.facebook.com"><img src="img/icons8-facebook.svg" alt="" class="h-8"></a>
+                            <!-- Link 2 -->
+                            <a href="www.youtube.com"><img src="img/icons8-youtube.svg" alt="" class="h-8"></a>
+                            <!-- Link 3 -->
+                            <a href="www.twitter.com"><img src="img/icons8-twitter.svg" alt="" class="h-8"></a>
+                            <!-- Link 4 -->
+                            <a href="www.tiktok.com"><img src="img/icons8-tiktok.svg" alt="" class="h-8"></a>
+                            <!-- Link 5 -->
+                            <a href="www.instagram.com"><img src="img/icons8-instagram.svg" alt="" class="h-8"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

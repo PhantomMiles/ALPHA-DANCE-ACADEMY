@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA Dance Academy Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/d2a04fa078.js" crossorigin="anonymous"></script>
+    <style>
+        /* Example minimal styling for Jumia-like look */
+        .jumia-search { border: 2px solid #f68b1e; border-radius: 4px; }
+        .jumia-btn { background: #f68b1e; color: #fff; border: none; border-
+    <!--
+      This example requires some changes to your config:
+      // tailwind.config.js
+      module.exports = {
+        // ...
+        plugins: [
+          // ...
+          require('@tailwindcss/aspect-ratio'),
+        ],
+      }
+    -->
+    <div class="text-white bg-vampireBlack">
+        <!-- Mobile menu (hidden by default) -->
+        <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true" style="display:none;">
+            <div class="fixed inset-0 bg-black bg-opacity-25"></div>
+            <div class="fixed inset-0 z-40 flex">
+                <div class="relative flex flex-col w-full max-w-xs pb-12 overflow-y-auto shadow-xl bg-vampireBlack">
+                    <div class="flex px-4 pt-5 pb-2">
+                        <button type="button" class="relative inline-flex items-center justify-center p-2 -m-2 text-gray-400 rounded-md">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Close menu</span>
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- ...mobile menu content... -->
+                </div>
+            </div>
+        </div>
+
+        <header class="relative bg-vampireBlack">
+            <p class="flex items-center justify-center h-10 px-4 text-sm font-medium text-white bg-rebeccaPurple sm:px-6 lg:px-8">Get free delivery on orders over ₦100</p>
+            <nav aria-label="Top" class="z-10 max-w-full px-4 mx-auto sm:px-6 lg:px-8" id="myHeader">
+                <div class="border-b border-gray-200">
+                    <div class="flex items-center h-16">
+                        <!-- Mobile menu toggle -->
+                        <button type="button" class="relative p-2 text-gray-400 rounded-md bg-vampireBlack lg:hidden">
+                            <span class="absolute -inset-0.5"></span>
+                            <span class="sr-only">Open menu</span>
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                        <!-- Logo -->
+                        <div class="flex ml-4 lg:ml-0">
+                            <a href="index.html">
+                                <span class="sr-only">Your Company</span>
+                                <img class="w-auto h-20" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- Flyout menus -->
+                        <div class="lg:ml-8 lg:block lg:self-stretch">
+                            <div class="flex h-full space-x-8">
+                                <div class="flex">
+                                    <div class="relative flex">
+                                        <button type="button" class="relative z-10 flex items-center pt-px -mb-px text-sm font-medium transition-colors duration-200 ease-out border-b-2 border-transparent text-gray-10 hover:text-rebeccaPurple" aria-expanded="false">Women</button>
+                                    </div>
+                                    <div class="absolute inset-x-0 hidden text-sm text-gray-500 top-full">
+                                        <!-- ...Women flyout content... -->
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="relative flex">
+                                        <button type="button" class="relative z-10 flex items-center pt-px -mb-px text-sm font-medium transition-colors duration-200 ease-out border-b-2 border-transparent text-gray-10 hover:text-rebeccaPurple" aria-expanded="false">Men</button>
+                                    </div>
+                                    <div class="absolute inset-x-0 hidden text-sm text-gray-500 top-full">
+                                        <!-- ...Men flyout content... -->
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <div class="relative flex">
+                                        <button type="button" class="relative z-10 flex items-center pt-px -mb-px text-sm font-medium transition-colors duration-200 ease-out border-b-2 border-transparent text-gray-50 hover:text-rebeccaPurple" aria-expanded="false">Kids</button>
+                                    </div>
+                                    <div class="absolute inset-x-0 hidden text-sm text-gray-500 top-full">
+                                        <!-- ...Kids flyout content... -->
+                                    </div>
+                                </div>
+                                <a href="#" class="flex items-center text-sm font-medium text-gray-10 hover:text-rebeccaPurple">Stores</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center ml-auto">
+                            <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                                <a href="login.html" class="text-sm font-medium text-gray-10 hover:text-rebeccaPurple">Sign in</a>
+                                <span class="w-px h-6 bg-gray-200" aria-hidden="true"></span>
+                                <a href="signup.html" class="text-sm font-medium text-gray-10 hover:text-rebeccaPurple">Create account</a>
+                            </div>
+                            <div class="hidden lg:ml-8 lg:flex">
+                                <a href="#" class="flex items-center text-gray-10 hover:text-rebeccaPurple">
+                                    <img src="img/nigeria.png" alt="" class="flex-shrink-0 block w-5 h-auto">
+                                    <span class="block ml-3 text-sm font-medium">NGN</span>
+                                    <span class="sr-only">, change currency</span>
+                                </a>
+                            </div>
+                            <!-- Search -->
+                            <div class="flex lg:ml-6">
+                                <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
+                                    <span class="sr-only">Search</span>
+                                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- Cart -->
+                            <div class="flow-root ml-4 lg:ml-6">
+                                <a href="cart.html" class="flex items-center p-2 -m-2 group">
+                                    <svg class="flex-shrink-0 w-6 h-6 text-gray-50 group-hover:text-rebeccaPurple" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+                                    <span id="item-count" class="ml-2 text-sm font-medium text-gray-10 group-hover:text-rebeccaPurple">0</span>
+                                    <span class="sr-only">items in cart, view bag</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="px-5 -mt-10">
+        <div class="max-w-2xl px-4 pb-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+            <h2 class="p-4 text-4xl font-bold tracking-tight text-gray-900">Our Brand Tops</h2>
+            <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
+                <!-- Product cards... -->
+            </div>
+        </div>
+        <hr class="border-1 border-rebeccaPurple">
+    </div>
+    <section class="py-24">
+        <div class="w-full px-4 mx-auto max-w-7xl md:px-5 lg-6">
+            <h2 class="mb-8 text-4xl font-bold leading-10 text-center text-black title font-manrope">Shop Our Products</h2>
+            <div class="flex flex-col md:flex-row">
+                <aside class="w-full p-4 mb-6 bg-white rounded-lg shadow-md md:w-1/4 md:mb-0">
+                    <h3 class="text-lg font-semibold">Categories</h3>
+                    <ul>
+                        <li><a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Beast Edition Hoodies</a></li>
+                        <li><a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Female Alpha top</a></li>
+                        <li><a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Male Alpha top</a></li>
+                        <li><a href="#" class="block py-2 text-gray-600 hover:text-indigo-600">Kids Alpha top</a></li>
+                    </ul>
+                </aside>
+                <div class="w-full p-4 md:w-3/4">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="p-4 bg-white rounded-lg shadow-md">
+                            <img src="img/confirmation-page-04-product-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="object-cover w-full h-48 rounded-md">
+                            <h3 class="mt-2 text-lg font-semibold">Beast edition Hoodie</h3>
+                            <p class="text-gray-600">₦11,999.99</p>
+                            <button class="w-full py-2 mt-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700" onclick="addToCart('Beast edition Hoodie', 11999.99, 1)">Add to Cart</button>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg shadow-md">
+                            <img src="img/product-page-02-featured-product-shot.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top."  class="object-cover w-full h-48 rounded-md">
+                            <h3 class="mt-2 text-lg font-semibold">Male Alpha Top</h3>
+                            <p class="text-gray-600">₦12,999.99</p>
+                            <button class="w-full py-2 mt-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700" onclick="addToCart('Male Alpha Top', 12999.99, 1)">Add to Cart</button>
+                        </div>
+                        <div class="p-4 bg-white rounded-lg shadow-md">
+                            <img src="img/product-page-02-secondary-product-shot.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="object-cover w-full h-48 rounded-md">
+                            <h3 class="mt-2 text-lg font-semibold">Kids Alpha Top</h3>
+                            <p class="text-gray-600">₦14,999.99</p>
+                            <button class="w-full py-2 mt-4 text-white bg-indigo-600 rounded-md hover:bg-indigo-700" onclick="addToCart('Kids Alpha Top', 14999.99, 1)">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div id="cart-items" class="hidden"></div>
+                    <div id="total-price" class="hidden"></div>
+                    <div id="sub-total" class="hidden"></div>
+                    <div id="item-count" class="hidden"></div>
+                    <div class="mt-6">
+                        <button class="px-4 py-2 text-white bg-indigo-600 rounded-md hover:bg-indigo-700">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="relative px-5 pb-40">
+        <div class="pt-16 pb-80 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
+            <div class="relative px-4 mx-auto max-w-7xl sm:static sm:px-6 lg:px-8">
+                <div class="sm:max-w-lg">
+                    <h1 class="text-4xl font-bold tracking-normal text-gray-900 sm:text-6xl">Beast Edition hoodies are finally here</h1>
+                    <p class="mt-4 text-xl text-gray-500">This year, our new hoodie vest collection will not only make you look cool in the gym but help boost that gym motivation in you.</p>
+                </div>
+                <div class="-ml-20">
+                    <div class="mt-10">
+                        <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                            <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                                <div class="flex items-center space-x-6 lg:space-x-8">
+                                    <!-- ...image grid... -->
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="inline-block px-8 py-3 ml-20 font-medium text-center text-white border border-transparent rounded-md bg-eggplant hover:bg-rebeccaPurple">Shop Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="hidden text-white border-t border-gray-200 bg-blackRock lg:flex">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-start justify-between pt-16 pb-6 gap-y-12 lg:flex-row lg:items-center lg:py-4">
+                <div class="flex-col-reverse md:flex-col">
+                    <div class="flex items-center text-gray-900">
+                        <div>
+                            <img src="img/logo.png" alt="" class="w-40 h-40 mt-1 md:block">
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-base font-semibold">Alpha Dance Academy</p>
+                            <p class="mt-1 text-sm">100% Passion or Nothing.</p>
+                        </div>
+                        <div class="flex flex-col-reverse lg:flex-row lg:max-w-[500px] md:ml-[300px] items-center md:items-start">
+                            <form class="flex justify-center w-full md:w-auto">
+                                <div class="min-w-0 w-60 lg:w-80 shrink">
+                                    <input id="newsletter-email" type="email" aria-label="Email address" placeholder="Email address" autocomplete="email" required class="block w-full px-3 py-2 text-gray-900 bg-white border border-gray-200 rounded-lg appearance-none placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                                </div>
+                                <button class="relative inline-flex justify-center flex-none px-3 py-2 ml-4 overflow-hidden text-sm font-semibold text-white transition-colors rounded-lg outline-2 outline-offset-2 bg-blueViolet before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-rebeccaPurple active:text-white/80 before:transition-colors"
+                                    type="submit">
+                                    <span class="hidden lg:inline">Join our newsletter</span>
+                                    <span class="lg:hidden">Join newsletter</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center max-w-full pt-8 pb-4 border-t border-gray-200 md:flex-row-reverse md:justify-between md:pt-6">
+                        <p class="mt-6 text-sm text-gray-500 md:mt-0 ml-[600px]" style="float: right;">© Copyright 2023. All rights reserved.</p>
+                        <div class="flex max-w-[500px] px-4 py-2 space-x-10" style="float: left;">
+                            <a href="https://www.facebook.com"><img src="img/icons8-facebook.svg" alt="" class="h-8"></a>
+                            <a href="https://www.youtube.com"><img src="img/icons8-youtube.svg" alt="" class="h-8"></a>
+                            <a href="https://www.twitter.com"><img src="img/icons8-twitter.svg" alt="" class="h-8"></a>
+                            <a href="https://www.tiktok.com"><img src="img/icons8-tiktok.svg" alt="" class="h-8"></a>
+                            <a href="https://www.instagram.com"><img src="img/icons8-instagram.svg" alt="" class="h-8"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script2.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

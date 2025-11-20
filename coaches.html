@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Coaches | Alpha Dance Academy</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/d2a04fa078.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .alpha-photo-wolf {
+            width: 20rem;
+            height: 24rem;
+            overflow: hidden;
+            position: relative;
+            clip-path: polygon(
+                50% 0%, 60% 8%, 70% 0%, 78% 12%, 98% 25%, 100% 40%, 95% 60%, 80% 80%, 70% 98%, 50% 100%,
+                30% 98%, 20% 80%, 5% 60%, 0% 40%, 2% 25%, 22% 12%, 30% 0%, 40% 8%
+            );
+            box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+            background: #222;
+        }
+        .alpha-photo-wolf img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .alpha-photo-wolf.grayscale img { filter: grayscale(1); }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#1a1a2e] to-[#16213e] text-white">
+
+    <!-- Header & Navigation -->
+    <nav class="z-10 max-w-full mx-auto flex items-center justify-between py-6 px-4 lg:px-10" id="myHeader">
+            <!-- Left Nav -->
+            <div class="hidden lg:flex gap-x-6 items-center justify-end">
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-2 focus:outline-none">
+                        About
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-[300px] bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="about.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">About ALPHA Dance Academy</a>
+                        <a href="coaches.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Our Coaches</a>
+                        <a href="pay_plan.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Payment Plans</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-1 focus:outline-none">
+                        Our Classes
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="fitness.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Fitness Class</a>
+                        <a href="kids.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Kids Dance Class</a>
+                        <a href="adults.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Adults Dance Class</a>
+                        <a href="gen.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">General Dance Class</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="flex items-center text-sm font-bold uppercase text-white hover:text-indigo-400 gap-1 focus:outline-none">
+                        Forums
+                        <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition z-20">
+                        <a href="coach_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">ALPHAs' Forum</a>
+                        <a href="parents_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Parents Forum</a>
+                        <a href="motm_f.html" class="block px-4 py-2 text-gray-900 hover:bg-gray-100 font-bold">Members of the Month</a>
+                    </div>
+                </div>
+                <a href="faq.html" class="text-sm font-bold hover:text-indigo-400 text-white">FAQs</a>
+                <a href="feedback.html" class="uppercase text-sm font-bold hover:text-indigo-400 text-white">Contact Us</a>
+            </div>
+            <!-- Center Logo -->
+            <div class="flex-1 flex justify-center">
+                <a href="index.html" class="flex items-center">
+                    <img class="h-10 w-auto" src="img/logo2.png" alt="Alpha Dance Academy Logo">
+                </a>
+            </div>
+            <!-- Right Nav -->
+            <div class="hidden lg:flex flex-1 justify-start gap-x-6 items-center uppercase">
+                <a href="dashboard.html" id="profile" class="text-sm font-bold text-white hover:text-indigo-400"><i class="fa fa-user-circle"></i> Your Profile</a>
+                <a href="signup.html" class="text-sm font-bold hover:text-indigo-400 text-white">Register <span aria-hidden="true">&rarr;</span></a>
+                <a href="login.html" class="text-sm font-bold hover:text-indigo-400 text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="lg:hidden text-white absolute right-4 top-1/2 -translate-y-1/2">
+                <i class="fa fa-bars fa-2x"></i>
+            </button>
+    </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden bg-black text-white px-6 py-4">
+            <ul class="flex flex-col gap-4">
+                <li><a href="about.html">About</a></li>
+                <li><a href="coaches.html">Our Coaches</a></li>
+                <li><a href="pay_plan.html">Payment Plans</a></li>
+                <li><a href="fitness.html">Fitness Class</a></li>
+                <li><a href="kids.html">Kids Dance Class</a></li>
+                <li><a href="adults.html">Adults Dance Class</a></li>
+                <li><a href="gen.html">General Dance Class</a></li>
+                <li><a href="coach_f.html">ALPHAs' Forum</a></li>
+                <li><a href="parents_f.html">Parents Forum</a></li>
+                <li><a href="motm_f.html">Members of the Month</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="feedback.html">Contact Us</a></li>
+                <li><a href="signup.html">Register</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </div>
+
+    <!-- About Alphas Section -->
+    <section class="relative py-20 overflow-hidden isolate sm:py-32">
+        <div class="px-6 mx-auto max-w-7xl lg:px-20">
+            <div class="max-w-2xl mx-auto lg:mx-0 lg:max-w-5xl">
+                <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Alphas</h2>
+                <p class="mt-6 text-lg leading-8 text-justify text-indigo-100">
+                    Meet the Alphas—our dedicated team of coaches at Alpha Dance Academy. Each instructor brings unique expertise, passion, and commitment to helping every student grow as a dancer and as an individual. Our coaches are carefully selected for their professionalism, creativity, and ability to inspire, ensuring a supportive and motivating environment for all. Whether you are a beginner or an experienced dancer, our Alphas are here to guide you on your dance journey and help you achieve your goals.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Current Alphas Section -->
+    <section class="bg-white/10 py-16">
+        <div class="container px-6 py-10 mx-auto">
+            <h2 class="mb-4 text-3xl font-bold text-center text-white">Our Current Alphas</h2>
+            <p class="mx-auto mb-10 text-lg text-center max-w-4xl text-indigo-100">
+                These are the current brand instructors that will be taking our classes. They are 7 in number with two on probation. They were chosen due to their commitment to the brand as well as their dedication to the brand's growth in all aspects. Annual restructuring will determine the next set of Alphas that will be introduced.
+            </p>
+            <div class="space-y-16">
+                <!-- Each Alpha: alternate left/right image for Figma style -->
+                <!-- Chekwas Michael Okorie -->
+                <div class="flex flex-col items-center gap-10 lg:flex-row">
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/001.jpg" alt="Chekwas Michael Okorie" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Chekwas Michael Okorie</h3>
+                        <p class="text-indigo-100">
+                            Chekwas Michael Okorie is the founder and CEO of Alpha Dance Academy, holding the distinguished position of 001 in rank. His vision, leadership, and passion for dance have shaped the academy’s culture and growth. With a commitment to excellence and innovation, he inspires both coaches and students to reach their highest potential. As a mentor and role model, Chekwas continually drives the team forward, fostering creativity, discipline, and unity among the Alphas. His dedication ensures that Alpha Dance Academy remains a beacon of talent and opportunity in the dance community.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Chinweze Chimamanda Mmesoma -->
+                <div class="flex flex-col-reverse items-center gap-10 lg:flex-row">
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Chinweze Chimamanda Mmesoma</h3>
+                        <p class="text-indigo-100">
+                            Chinweze Chimamanda Mmesoma (Manda) is known for her resilience and intelligence, both on and off the dance floor. As an Alpha, she brings a unique blend of determination and creativity to every class. Her primary style is Afro dance, where her energy and expressive movements inspire students to embrace their own individuality. Chimamanda’s smart approach to choreography and teaching helps dancers of all levels grow in confidence and skill. Her commitment to excellence and her positive spirit make her an invaluable member of the Alpha Dance Academy team.
+                        </p>
+                    </div>
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/013.jpg" alt="Chinweze Chimamanda Mmesoma" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Obinna Joseph Sylvester -->
+                <div class="flex flex-col items-center gap-10 lg:flex-row">
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/003.jpg" alt="Obinna Joseph Sylvester" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Obinna Joseph Sylvester</h3>
+                        <p class="text-indigo-100">
+                            Obinna Joseph Sylvester, also known as HyperActive, is a dynamic hip-hop dancer and the current second-in-command at Alpha Dance Academy, holding the prestigious rank of 002. Renowned for his high energy, precision, and innovative choreography, HyperActive brings a vibrant presence to every class and performance. His leadership skills and dedication to the academy’s mission make him an essential pillar of the Alpha team. As a mentor, he motivates students to push their boundaries and embrace the expressive power of hip-hop. Obinna’s commitment to excellence and his supportive approach help foster a collaborative and inspiring environment for both coaches and dancers.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Ezeja Samson Chigozie -->
+                <div class="flex flex-col-reverse items-center gap-10 lg:flex-row">
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Ezeja Samson Chigozie</h3>
+                        <p class="text-indigo-100">
+                            Ezeja Samson Chigozie, also known as Sam1, is celebrated for his versatility and dynamic presence at Alpha Dance Academy. While his primary focus is on cultural and Makossa dance styles, Sam1’s adaptability matches that of HyperActive, allowing him to excel across a wide range of genres. His creative approach fuses traditional rhythms with modern techniques, making each class engaging and inspiring. Sam1’s dedication to cultural expression and his ability to connect with dancers of all levels make him an invaluable member of the team, encouraging students to embrace both heritage and innovation in their dance journey.
+                        </p>
+                    </div>
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/004.jpg" alt="Ezeja Samson Chigozie" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Ignatius Wisdom -->
+                <div class="flex flex-col items-center gap-10 lg:flex-row">
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/005.jpg" alt="Ignatius Wisdom" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Ignatius Wisdom</h3>
+                        <p class="text-indigo-100">
+                            Ignatius Wisdom, popularly known as Wizzy, is recognized for his infectious energy and mastery of street afro and mara dance styles. His vibrant personality and creative choreography bring a fresh, urban edge to every class. Wizzy’s ability to connect with students and break down complex moves makes him a favorite among dancers of all levels. His passion for dance and commitment to growth inspire those around him, while his innovative approach ensures that every session is dynamic and engaging. As an Alpha, Wizzy embodies the spirit of versatility, motivation, and community at Alpha Dance Academy.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Michael Ndudi -->
+                <div class="flex flex-col-reverse items-center gap-10 lg:flex-row">
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Michael Ndudi</h3>
+                        <p class="text-indigo-100">
+                            Michael Ndudi, also known as Evil Sky or E-Sky, is a dynamic force at Alpha Dance Academy. Specializing in Hip hop and Afro pop, E-Sky is renowned for his sharp technique and creative flair. He forms a powerful duo with HyperActive, especially when it comes to pop and lock, where their synergy and precision captivate audiences and inspire students. E-Sky’s passion for dance, combined with his collaborative spirit, makes him a driving influence in the academy. His dedication to pushing boundaries and supporting his peers ensures that every class is both challenging and motivating for dancers of all levels.
+                        </p>
+                    </div>
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/009.jpg" alt="Michael Ndudi" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Emekaogbu Miracle -->
+                <div class="flex flex-col items-center gap-10 lg:flex-row">
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/008.jpeg" alt="Emekaogbu Miracle" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Emekaogbu Miracle</h3>
+                        <p class="text-indigo-100">
+                            Emekaogbu Miracle, known as Miraz, is celebrated for his versatility and adaptability on the dance floor. While he is skilled in various dance genres, his main style is Afro, where his creativity and energy truly shine. Miraz’s dynamic teaching approach and passion for dance inspire students to explore their own potential and embrace new challenges. His commitment to growth and his supportive attitude make him a valued member of the Alpha Dance Academy team, motivating dancers of all levels to excel and enjoy their dance journey.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Ladipoe Stella-maris -->
+                <div class="flex flex-col-reverse items-center gap-10 lg:flex-row">
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Ladipoe Stella-maris</h3>
+                        <p class="text-indigo-100">
+                            Ladipoe Stella-maris is often regarded as the unofficial twin of Manda, sharing a similar drive and passion for dance. Known for her versatility, Stella-maris can adapt to a variety of dance styles and always brings energy and intensity to every performance. Her ability to "bring the heat" when needed makes her a dynamic presence in the studio. Stella-maris inspires her peers and students alike with her commitment, creativity, and willingness to take on new challenges, making her an invaluable member of the Alpha Dance Academy team.
+                        </p>
+                    </div>
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf grayscale">
+                            <img src="img/012.jpg" alt="Ladipoe Stella-maris" />
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Okoronkwo Chinaza Ikechukwu -->
+                <div class="flex flex-col items-center gap-10 lg:flex-row">
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf grayscale">
+                            <img src="img/014.jpg" alt="Okoronkwo Chinaza Ikechukwu" />
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Okoronkwo Chinaza Ikechukwu</h3>
+                        <p class="text-indigo-100">
+                            Okoronkwo Chinaza Ikechukwu, also known by his alias Emperor, is an accomplished Afro dancer whose passion and dedication shine through in every performance. Emperor is celebrated for his powerful stage presence, creative choreography, and ability to energize any class with his enthusiasm. His expertise in Afro dance styles, combined with a supportive teaching approach, inspires students to push their boundaries and embrace their individuality. As an Alpha, Emperor brings a unique blend of discipline, artistry, and motivation to the team, making him a valued mentor and role model at Alpha Dance Academy.
+                        </p>
+                    </div>
+                </div>
+                <hr class="border-indigo-200/20">
+                <!-- Afro Zito -->
+                <div class="flex flex-col-reverse items-center gap-10 lg:flex-row">
+                    <div class="w-full lg:w-2/3">
+                        <h3 class="mb-2 text-2xl font-bold">Afro Zito</h3>
+                        <p class="text-indigo-100">
+                            Afro Zito is a vibrant and charismatic dance coach whose passion for Afrobeat and contemporary dance styles shines through in every class. Known for his infectious enthusiasm and innovative choreography, Zito creates an energetic and inclusive environment where students feel empowered to express themselves. His deep understanding of rhythm and movement, combined with a talent for teaching, helps dancers of all levels unlock their potential. Afro Zito’s commitment to fostering creativity and confidence makes him a beloved mentor and a driving force behind the dynamic spirit of Alpha Dance Academy.
+                        </p>
+                    </div>
+                    <div class="flex justify-center flex-shrink-0 w-full lg:w-1/3">
+                        <div class="alpha-photo-wolf">
+                            <img src="img/afro_zito.jpg" alt="Afro Zito" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Previous Alphas Section -->
+    <section class="bg-white/5 py-16">
+        <div class="container px-6 py-10 mx-auto">
+            <h2 class="mb-4 text-3xl font-bold text-center text-white">Previous Alphas</h2>
+            <p class="mx-auto mb-10 text-lg text-center max-w-4xl text-indigo-100">
+                These are some of the talented coaches who have contributed to Alpha Dance Academy in the past. Their legacy and impact continue to inspire our community.
+            </p>
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Example Previous Alpha Card -->
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha1.jpg" alt="Previous Alpha 1" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">Jane Doe</h4>
+                    <p class="text-indigo-200 text-center mb-2">Afro Dance Specialist</p>
+                    <p class="text-indigo-100 text-center text-sm">Jane was instrumental in developing our Afro dance curriculum and mentored many of our current coaches.</p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha2.jpg" alt="Previous Alpha 2" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">John Smith</h4>
+                    <p class="text-indigo-200 text-center mb-2">Hip-Hop Coach</p>
+                    <p class="text-indigo-100 text-center text-sm">John brought energy and innovation to our hip-hop classes, inspiring a new generation of dancers.</p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha3.jpg" alt="Previous Alpha 3" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">Adaeze Nwosu</h4>
+                    <p class="text-indigo-200 text-center mb-2">Contemporary Dance</p>
+                    <p class="text-indigo-100 text-center text-sm">Adaeze's creativity and passion for contemporary dance left a lasting mark on our academy.</p>
+                </div>
+                <!-- Add more previous alphas as needed -->
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha4.jpg" alt="Previous Alpha 4" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">Chidera Okafor</h4>
+                    <p class="text-indigo-200 text-center mb-2">Latin Dance Coach</p>
+                    <p class="text-indigo-100 text-center text-sm">Chidera introduced Latin rhythms to our academy, inspiring students with her passion and technical skill.</p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha5.jpg" alt="Previous Alpha 5" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">Samuel Eze</h4>
+                    <p class="text-indigo-200 text-center mb-2">Breakdance Instructor</p>
+                    <p class="text-indigo-100 text-center text-sm">Samuel’s creativity and energetic teaching style helped popularize breakdancing at Alpha Dance Academy.</p>
+                </div>
+                <div class="bg-white/10 rounded-2xl p-6 flex flex-col items-center shadow-lg">
+                    <div class="alpha-photo-wolf grayscale mb-4">
+                        <img src="img/prev_alpha6.jpg" alt="Previous Alpha 6" />
+                    </div>
+                    <h4 class="text-xl font-bold mb-1">Blessing Umeh</h4>
+                    <p class="text-indigo-200 text-center mb-2">Ballet Specialist</p>
+                    <p class="text-indigo-100 text-center text-sm">Blessing’s elegance and dedication to ballet training elevated the academy’s classical dance program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-white bg-[#181824]">
+        <div class="container flex flex-col items-center justify-between gap-8 mx-auto lg:flex-row">
+            <div class="flex items-center gap-4">
+                <img src="img/logo.png" alt="Alpha Dance Academy Logo" class="w-20 h-20">
+                <div>
+                    <p class="font-semibold">Alpha Dance Academy</p>
+                    <p class="text-sm">100% Passion or Nothing.</p>
+                </div>
+            </div>
+            <form class="flex justify-center w-full md:w-auto">
+                <div class="min-w-0 w-60 lg:w-80 shrink">
+                    <input type="email" aria-label="Email address" placeholder="Email address" autocomplete="email" required class="block w-full appearance-none rounded-lg border border-gray-200 bg-transparent py-2 px-3 text-white placeholder:text-gray-400 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
+                </div>
+                <button class="relative inline-flex justify-center flex-none px-3 py-2 ml-4 overflow-hidden text-sm font-semibold text-white transition-colors rounded-lg outline-2 outline-offset-2 bg-gradient-to-r from-indigo-600 to-green-500 hover:from-green-500 hover:to-indigo-600 before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-white/10 active:bg-indigo-700 active:text-white/80 before:transition-colors"
+                    type="submit">
+                        <span class="hidden lg:inline">Join our newsletter</span>
+                        <span class="lg:hidden">Join newsletter</span>
+                </button>
+            </form>
+            <div class="flex gap-4">
+                <a href="https://facebook.com"><img src="img/icons8-facebook.svg" alt="Facebook" class="h-8"></a>
+                <a href="https://youtube.com"><img src="img/icons8-youtube.svg" alt="YouTube" class="h-8"></a>
+                <a href="https://twitter.com"><img src="img/icons8-twitter.svg" alt="Twitter" class="h-8"></a>
+                <a href="https://tiktok.com"><img src="img/icons8-tiktok.svg" alt="TikTok" class="h-8"></a>
+                <a href="https://instagram.com"><img src="img/icons8-instagram.svg" alt="Instagram" class="h-8"></a>
+            </div>
+        </div>
+        <div class="mt-8 text-sm text-center text-gray-400">&copy; 2023. All rights reserved.</div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

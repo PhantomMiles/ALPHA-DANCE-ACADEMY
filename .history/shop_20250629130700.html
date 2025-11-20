@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA Dance Academy Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/d2a04fa078.js" crossorigin="anonymous"></script>
+    <style>
+        /* Use Tailwind's rebeccaPurple or electricPurple from tailwind.config.js */
+        :root {
+            --main-purple: #8e44ad; /* rebeccaPurple */
+            --main-purple-dark: #6d3392;
+            --main-purple-light: #a678d3;
+        }
+        .jumia-search { border: 2px solid var(--main-purple); border-radius: 4px; }
+        .jumia-btn { background: var(--main-purple); color: #fff; border: none; border-radius: 4px; }
+        .jumia-btn:hover { background: var(--main-purple-dark); }
+        .product-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
+        .sidebar-category a.active, .sidebar-category a:hover { color: var(--main-purple); font-weight: bold; }
+        .text-purple { color: var(--main-purple); }
+        .bg-purple { background: var(--main-purple); }
+        .bg-purple-dark { background: var(--main-purple-dark); }
+        .border-purple { border-color: var(--main-purple); }
+    </style>
+</head>
+<body class="bg-purple-light">
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container flex items-center justify-between px-6 py-4 mx-auto">
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo.png" alt="Logo" class="h-12 mr-2">
+                <span class="text-xl font-bold text-purple">ALPHA Dance Academy</span>
+            </a>
+            <form class="flex-1 max-w-xl mx-8" onsubmit="return false;">
+                <input type="text" placeholder="Search for products, brands and categories" class="w-full px-4 py-2 jumia-search" id="searchInput">
+            </form>
+            <div class="flex items-center space-x-6">
+                <a href="login.html" class="text-gray-700 hover:text-purple">Sign in</a>
+                <a href="signup.html" class="text-gray-700 hover:text-purple">Register</a>
+                <a href="cart.html" class="relative">
+                    <i class="text-2xl text-gray-700 fa fa-shopping-cart"></i>
+                    <span id="item-count" class="absolute px-2 text-xs text-white rounded-full bg-purple -top-2 -right-2">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container flex flex-col px-4 mx-auto mt-6 md:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full mb-6 md:w-1/4 md:mb-0 md:mr-8">
+            <div class="p-4 bg-white rounded shadow">
+                <h3 class="mb-4 text-lg font-semibold text-purple">Categories</h3>
+                <ul class="space-y-2 sidebar-category">
+                    <li><a href="#" class="block py-1 hover:text-purple">Beast Edition Hoodies</a></li>
+                    <li><a href="#" class="block py-1 hover:text-purple">Female Alpha Top</a></li>
+                    <li><a href="#" class="block py-1 hover:text-purple">Male Alpha Top</a></li>
+                    <li><a href="#" class="block py-1 hover:text-purple">Kids Alpha Top</a></li>
+                </ul>
+                <hr class="my-4">
+                <h4 class="mb-2 font-semibold text-purple">Filter by Price</h4>
+                <input type="range" min="5000" max="20000" value="15000" class="w-full mb-2 accent-[var(--main-purple)]">
+                <div class="flex justify-between text-xs text-gray-500">
+                    <span>₦5,000</span>
+                    <span>₦20,000</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Products Grid -->
+        <section class="w-full md:w-3/4">
+            <h2 class="mb-4 text-2xl font-bold text-purple">Shop Our Products</h2>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Product Card 1 -->
+                <div class="p-4 transition duration-200 bg-white rounded shadow product-card">
+                    <img src="img/confirmation-page-04-product-01.jpg" alt="Beast edition Hoodie" class="object-cover w-full h-48 rounded">
+                    <h3 class="mt-2 text-lg font-semibold">Beast edition Hoodie</h3>
+                    <p class="text-lg font-bold text-purple">₦11,999.99</p>
+                    <button class="w-full py-2 mt-4 jumia-btn" onclick="addToCart('Beast edition Hoodie', 11999.99, 1)">Add to Cart</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="p-4 transition duration-200 bg-white rounded shadow product-card">
+                    <img src="img/product-page-02-featured-product-shot.jpg" alt="Male Alpha Top" class="object-cover w-full h-48 rounded">
+                    <h3 class="mt-2 text-lg font-semibold">Male Alpha Top</h3>
+                    <p class="text-lg font-bold text-purple">₦12,999.99</p>
+                    <button class="w-full py-2 mt-4 jumia-btn" onclick="addToCart('Male Alpha Top', 12999.99, 1)">Add to Cart</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="p-4 transition duration-200 bg-white rounded shadow product-card">
+                    <img src="img/product-page-02-secondary-product-shot.jpg" alt="Kids Alpha Top" class="object-cover w-full h-48 rounded">
+                    <h3 class="mt-2 text-lg font-semibold">Kids Alpha Top</h3>
+                    <p class="text-lg font-bold text-purple">₦14,999.99</p>
+                    <button class="w-full py-2 mt-4 jumia-btn" onclick="addToCart('Kids Alpha Top', 14999.99, 1)">Add to Cart</button>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+            <div class="flex justify-center mt-8">
+                <button class="px-6 py-2 jumia-btn">Load More</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 mt-12 text-white bg-purple-dark">
+        <div class="container flex flex-col items-center justify-between px-4 mx-auto md:flex-row">
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo.png" alt="Logo" class="h-10 mr-2">
+                <span>Alpha Dance Academy &copy; 2023</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#"><img src="img/icons8-facebook.svg" alt="Facebook" class="h-6"></a>
+                <a href="#"><img src="img/icons8-youtube.svg" alt="YouTube" class="h-6"></a>
+                <a href="#"><img src="img/icons8-twitter.svg" alt="Twitter" class="h-6"></a>
+                <a href="#"><img src="img/icons8-tiktok.svg" alt="TikTok" class="h-6"></a>
+                <a href="#"><img src="img/icons8-instagram.svg" alt="Instagram" class="h-6"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script2.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
